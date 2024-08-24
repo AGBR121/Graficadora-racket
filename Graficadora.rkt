@@ -105,6 +105,12 @@ Funcion FunctionX que recibe la ecuación que el usuario escribirá.
                                                   ((equal? letter #\))
                                                    ")"
                                                   )
+                                                  ((equal? letter #\+)
+                                                   "+"
+                                                  )
+                                                  ((equal? letter #\-)
+                                                   "-"
+                                                  )
                                                   ((char-numeric? letter )
                                                    (~a letter)
                                                   )
@@ -185,6 +191,9 @@ Funcion Minimo que recibe el valor minimo de X que el usuario escribirá.
                                                   ((equal? letter 'numpad0)
                                                    "0"
                                                   )
+                                                  ((equal? letter #\-)
+                                                   "-"
+                                                  )
                                                   ((char-numeric? letter )
                                                    (~a letter)
                                                   )
@@ -264,6 +273,9 @@ Funcion Maximo que recibe el valor Maximo de X que el usuario escribirá.
                                                   )
                                                   ((equal? letter 'numpad0)
                                                    "0"
+                                                  )
+                                                  ((equal? letter #\-)
+                                                   "-"
                                                   )
                                                   ((char-numeric? letter )
                                                    (~a letter)
